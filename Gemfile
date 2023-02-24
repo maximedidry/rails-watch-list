@@ -48,7 +48,7 @@ gem "simple_form", github: "heartcombo/simple_form"
 gem "sassc-rails" # Uncomment this line
 gem "dotenv-rails", groups: [:development, :test]
 gem "cloudinary"
-
+gem 'carrierwave', '>= 3.0.0.beta', '< 4.0'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
