@@ -15,9 +15,11 @@
 
           </div>
 
-        <%= link_to "new list", new_list_bookmark_path(list) %>
+        <%= link_to "new bookmark", new_list_bookmark_path(list) %>
 
   <% end %>
+
+  <%= link_to "new list", new_list_path(@list) %>
 
     </div>
 </div>
