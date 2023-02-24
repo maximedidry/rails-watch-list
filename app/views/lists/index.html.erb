@@ -1,0 +1,30 @@
+
+
+<div class="home-banner m-5 p-5" style="background-image: url('https://imgr.cineserie.com/2017/02/Filmandclapboard.jpg?imgeng=/f_jpg/cmpr_0/w_660/h_370/m_cropbox&ver=1')"  >
+  <h1><span id="banner-typed-text"></span></h1>
+    <h1 class="banner-arrow"> WATCH LIST </h1>
+</div>
+
+<div class="container">
+  <div class="row cards">
+    <% @lists.each do |list| %>
+      <div class="col-4-sm">
+          <div class="card" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.12) 0, rgba(0,0,0,0.55) 74.4%), url('https://images.unsplash.com/photo-1534489573486-7d1fa4f436e4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80')">
+            <h3><%= link_to list.name, list_path(list)%></h3>
+          </div>
+        <% end %>
+        </div>
+    </div>
+</div>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+  </div>
+</div>
