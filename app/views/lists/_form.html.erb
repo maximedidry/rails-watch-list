@@ -2,3 +2,9 @@
   <%= f.input :name %>
   <%= f.submit "Submit list", class: "btn btn-primary" %>
 <% end %>
+
+<%= simple_form_for(article) do |f| %>
+  <!-- [...] -->
+  <%= f.input :photo, as: :file %>
+  <!-- [...] -->
+<% end %>
